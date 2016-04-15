@@ -1,0 +1,28 @@
+{
+  "name": "regexmatcher",
+  "version": "1.0.0",
+  "description": "Test your regular expression skills in JavaScript. Pass in a regular expression and a string. You'll get back an object with an array of possible matches and a useful summary to let you know how many matches you've got in plain english.",
+  "main": "regexmatcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanpoplin/regexmatcher.git"
+  },
+  "keywords": [
+    "regex"
+  ],
+  "author": "Ryan Poplin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanpoplin/regexmatcher/issues"
+  },
+  "homepage": "https://github.com/ryanpoplin/regexmatcher#readme",
+  "dependencies": {
+    "lodash": "^4.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}
