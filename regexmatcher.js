@@ -1,6 +1,6 @@
 'use strict';
 
-import _ from 'lodash';
+const _ = require('lodash');
 
 module.exports.getMatches = (regex, string) => {
     const deep = _.cloneDeep([regex]),
