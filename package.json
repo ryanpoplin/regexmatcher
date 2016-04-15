@@ -4,7 +4,8 @@
   "description": "Test your regular expression skills in JavaScript. Pass in a regular expression and a string. You'll get back an object with an array of possible matches and a useful summary to let you know how many matches you've got in plain english.",
   "main": "regexmatcher.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon example.js --exec babel-node",
+    "test": "eslint example.js regexmatcher.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,11 @@
     "lodash": "^4.11.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-preset-es2015": "^6.6.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.7.0",
+    "mocha": "^2.4.5",
     "nodemon": "^1.9.1"
   }
 }
