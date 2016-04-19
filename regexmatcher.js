@@ -17,7 +17,7 @@ module.exports.getMatches = (regex, string) => {
         results = [],
         resultsContainer = {};
 
-    var match,
+    let match,
         currentMatchIndex;
 
     while (regex.exec(string) !== null) {
