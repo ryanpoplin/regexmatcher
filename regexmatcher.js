@@ -3,6 +3,15 @@
 const _ = require('lodash');
 
 module.exports.getMatches = (regex, string) => {
+
+    if (regex instanceof RegExp === false) {
+        throw Error('You must pass a RegExp value type for regex')
+    }
+
+    if (typeof string !== 'string') {
+        throw Error('You must pass in a String value type for string')
+    }
+
     const deep = _.cloneDeep([regex]),
         regexClone = deep[0],
         results = [],

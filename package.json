@@ -1,6 +1,6 @@
 {
   "name": "regexmatcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test your regular expression skills in JavaScript. Pass in a regular expression and a string. You'll get back an object with an array of possible matches and a useful summary to let you know how many matches you've got in plain english.",
   "main": "regexmatcher.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/ryanpoplin/regexmatcher.git"
   },
   "keywords": [
-    "regex"
+    "regular expression matcher, regex matcher, regular expression matching, regex matching, regular expression, regex"
   ],
   "author": "Ryan Poplin",
   "license": "ISC",
