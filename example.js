@@ -1,8 +1,5 @@
 'use strict';
 
-// run 'npm start' in your terminal to play around.
-// run 'npm test' in your terminal to test the module.
-
 const regexmatcher = require('./regexmatcher'),
     matches = regexmatcher.getMatches(/https?/gi, 'http HTTPS httpS SPTTH https');
 console.log(matches);

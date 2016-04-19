@@ -1,16 +1,39 @@
 # regexmatcher
 
-## regexmatcher is a module for regular expression practice, testing and development with Node.js.
+## Synopsis
 
-### General Usage:
+### regexmatcher is a module for regular expression practice, testing and development with Node.js in mind.
 
-#### - Access the module via require('regexmatcher')
-#### - Assign to a const and use the .getMatches() method
-#### - Pass in a regular expression and a string to test your patterns
-#### - You'll get back an object containing an array of arrays with possible matches and a summary string
+## Installation
 
-### Running the included example.js, linting and unit tests:
+```
+# access your terminal
+npm install --save regexmatcher
+```
 
-#### - Access the regexmatcher module dir
-#### - npm start to see the terminal functionality (will run example.js and nodemon will be ready to watch your changes)
-#### - npm test to see the linting and unit tests pass
+## Example
+
+```javascript
+const regexmatcher = require('regexmatcher'),
+    matches = regexmatcher.getMatches(/https?/gi, 'http HTTPS httpS SPTTH https');
+console.log(matches);
+// { matches: [ [ 'http', index: 0, input: 'http HTTPS httpS SPTTH https' ], [ 'HTTPS', index: 5, input: 'http HTTPS httpS SPTTH https' ], [ 'httpS', index: 11, input: 'http HTTPS httpS SPTTH https' ], [ 'https', index: 23, input: 'http HTTPS httpS SPTTH https' ] ], summary: 'There are 4 matches' }
+```
+
+## Motivation
+
+### I wanted to quickly practice and test strings for regular expression matches without the overhead of UI tools on the web.
+
+### Running the example
+
+```
+# access the regexmatcher directory in your terminal
+npm start
+```
+
+### Running the linting and unit tests
+
+```
+# access the regexmatcher directory in your terminal
+npm test
+```
