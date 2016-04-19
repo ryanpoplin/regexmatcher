@@ -1,7 +1,7 @@
 {
   "name": "regexmatcher",
   "version": "1.1.0",
-  "description": "Test your regular expression skills in JavaScript. Pass in a regular expression and a string. You'll get back an object with an array of possible matches and a useful summary to let you know how many matches you've got in plain english.",
+  "description": "Test your regular expression skills in JavaScript. Pass in a regular expression and a string. You'll get back an object with an array of arrays with possible matches and a useful summary to let you know how many matches you've got in plain english.",
   "main": "regexmatcher.js",
   "scripts": {
     "start": "nodemon example.js --exec babel-node",
