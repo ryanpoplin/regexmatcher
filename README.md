@@ -17,10 +17,10 @@ npm install --save regexmatcher
 const regexmatcher = require('regexmatcher'),
     results = regexmatcher.getMatches(/\(?\d{3}\)?-?\d{3}-?\d{4}/, '555-555-5555');
 
-(results.matches.length === 1) ? console.log(results.matches[0][0]) : console.log('Please enter a valid North American telephone number...'); // 555-555-5555
+(results.matches.length === 1) ? console.log(results.matches[0][0]) : console.log('Please enter a valid North American telephone number...'); /* 555-555-5555 */
 
-console.log(results); // { matches: [ [ '555-555-5555', index: 0, input: '555-555-5555' ] ],
-  summary: 'There is 1 match.' }
+console.log(results); /* { matches: [ [ '555-555-5555', index: 0, input: '555-555-5555' ] ],
+  summary: 'There is 1 match.' } */
 ```
 
 ## Motivation
