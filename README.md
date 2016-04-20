@@ -15,9 +15,12 @@ npm install --save regexmatcher
 
 ```javascript
 const regexmatcher = require('regexmatcher'),
-    matches = regexmatcher.getMatches(/https?/gi, 'http HTTPS httpS SPTTH https');
-console.log(matches);
-// { matches: [ [ 'http', index: 0, input: 'http HTTPS httpS SPTTH https' ], [ 'HTTPS', index: 5, input: 'http HTTPS httpS SPTTH https' ], [ 'httpS', index: 11, input: 'http HTTPS httpS SPTTH https' ], [ 'https', index: 23, input: 'http HTTPS httpS SPTTH https' ] ], summary: 'There are 4 matches' }
+    results = regexmatcher.getMatches(/\(?\d{3}\)?-?\d{3}-?\d{4}/, '555-555-5555');
+
+(results.matches.length === 1) ? console.log(results.matches[0][0]) : console.log('Please enter a valid North American telephone number...'); // 555-555-5555
+
+console.log(results); // { matches: [ [ '555-555-5555', index: 0, input: '555-555-5555' ] ],
+  summary: 'There is 1 match.' }
 ```
 
 ## Motivation
