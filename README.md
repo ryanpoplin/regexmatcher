@@ -24,6 +24,14 @@ console.log(matches);
 
 ### I wanted to quickly practice and test strings for regular expression matches without the overhead of UI tools on the web.
 
+### Example Code
+
+```
+# access the terminal and go to the regexmatcher directory
+# you must npm install to get this code to run
+npm install
+```
+
 ### Running the example
 
 ```
