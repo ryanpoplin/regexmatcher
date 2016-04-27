@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/byrdannfox/.nvm/versions/node/v5.10.0/bin/node',
+1 verbose cli   '/Users/byrdannfox/.nvm/versions/node/v5.10.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/byrdannfox/regexmatcher',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/byrdannfox/.npm/regexmatcher/1.1.5/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/byrdannfox/.npm correctMkdir not in flight; initializing
+10 info lifecycle regexmatcher@1.1.5~prepublish: regexmatcher@1.1.5
+11 silly lifecycle regexmatcher@1.1.5~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/byrdannfox/.npm/regexmatcher/1.1.5/package.tgz',
+12 verbose tar pack   '/Users/byrdannfox/regexmatcher' ]
+13 verbose tarball /Users/byrdannfox/.npm/regexmatcher/1.1.5/package.tgz
+14 verbose folder /Users/byrdannfox/regexmatcher
+15 verbose addLocalTarball adding from inside cache /Users/byrdannfox/.npm/regexmatcher/1.1.5/package.tgz
+16 verbose correctMkdir /Users/byrdannfox/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd regexmatcher@1.1.5
+18 verbose afterAdd /Users/byrdannfox/.npm/regexmatcher/1.1.5/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/byrdannfox/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/byrdannfox/.npm/regexmatcher/1.1.5/package/package.json written
+21 silly publish { name: 'regexmatcher',
+21 silly publish   version: '1.1.5',
+21 silly publish   description: 'Test your regular expression skills in JavaScript. Pass in a regular expression and a string. You\'ll get back an object with an array of arrays with possible matches and a useful summary to let you know how many matches you\'ve got in plain english.',
+21 silly publish   main: 'regexmatcher.js',
+21 silly publish   scripts:
+21 silly publish    { start: 'nodemon example.js --exec babel-node',
+21 silly publish      test: 'eslint example.js regexmatcher.js && mocha ./specs/regexmatcher.specs.js --exec babel-node' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/ryanpoplin/regexmatcher.git' },
+21 silly publish   keywords: [ 'regular expression matcher, regex matcher, regular expression matching, regex matching, regular expression, regex' ],
+21 silly publish   author: { name: 'Ryan Poplin' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/ryanpoplin/regexmatcher/issues' },
+21 silly publish   homepage: 'https://github.com/ryanpoplin/regexmatcher#readme',
+21 silly publish   dependencies: { lodash: '^4.11.1' },
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-cli': '^6.7.5',
+21 silly publish      'babel-preset-es2015': '^6.6.0',
+21 silly publish      chai: '^3.5.0',
+21 silly publish      eslint: '^2.7.0',
+21 silly publish      mocha: '^2.4.5',
+21 silly publish      nodemon: '^1.9.1' },
+21 silly publish   readme: '# regexmatcher\n\n## Synopsis\n\n### regexmatcher is a module for regular expression practice, testing and development with Node.js in mind.\n\n## Installation\n\n```\n# access your terminal\nnpm install --save regexmatcher\n```\n\n## Example\n\n```javascript\nconst regexmatcher = require(\'regexmatcher\'),\n    results = regexmatcher.getMatches(/\\(?\\d{3}\\)?-?\\d{3}-?\\d{4}/, \'555-555-5555\');\n\n(results.matches.length === 1) ? console.log(results.matches[0][0]) : console.log(\'Please enter a valid North American telephone number...\'); /* 555-555-5555 */\n\nconsole.log(results); /* { matches: [ [ \'555-555-5555\', index: 0, input: \'555-555-5555\' ] ],\n  summary: \'There is 1 match.\' } */\n```\n\n## Motivation\n\n### I wanted to quickly practice and test strings for regular expression matches without the overhead of UI tools on the web.\n\n### Example Code\n\n```\n# access the terminal and go to the regexmatcher directory\n# you must npm install to get this code to run\nnpm install\n```\n\n### Running the example\n\n```\n# access the regexmatcher directory in your terminal\nnpm start\n```\n\n### Running the linting and unit tests\n\n```\n# access the regexmatcher directory in your terminal\nnpm test\n```',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '32238668fd7fb560e0a72ad36fb39bb755052e87',
+21 silly publish   _id: 'regexmatcher@1.1.5',
+21 silly publish   _shasum: 'b2fa2b89a050b5c41c3ddf9a909989f0d0c60f49',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name regexmatcher
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'regexmatcher',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'regexmatcher',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/regexmatcher
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/byrdannfox/.npm/regexmatcher/1.1.5/package.tgz
+30 verbose request uri https://registry.npmjs.org/regexmatcher
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 10:47:04 AM
+33 verbose request using bearer token for auth
+34 verbose request id 734b754e94ea61d9
+35 http request PUT https://registry.npmjs.org/regexmatcher
+36 http 403 https://registry.npmjs.org/regexmatcher
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 20 Apr 2016 14:47:05 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-atl6231-ATL',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1461163624.335009,VS0,VE816',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/byrdannfox/.npm/registry.npmjs.org/regexmatcher on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.1.5." : regexmatcher
+40 verbose stack     at makeError (/Users/byrdannfox/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/byrdannfox/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/byrdannfox/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/byrdannfox/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at emitTwo (events.js:100:13)
+40 verbose stack     at Request.emit (events.js:185:7)
+40 verbose stack     at Request.<anonymous> (/Users/byrdannfox/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at emitOne (events.js:95:20)
+40 verbose stack     at Request.emit (events.js:182:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/byrdannfox/.nvm/versions/node/v5.10.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid regexmatcher
+43 verbose cwd /Users/byrdannfox/regexmatcher
+44 error Darwin 15.3.0
+45 error argv "/Users/byrdannfox/.nvm/versions/node/v5.10.0/bin/node" "/Users/byrdannfox/.nvm/versions/node/v5.10.0/bin/npm" "publish"
+46 error node v5.10.0
+47 error npm  v3.8.3
+48 error code E403
+49 error "You cannot publish over the previously published version 1.1.5." : regexmatcher
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

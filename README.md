@@ -11,7 +11,30 @@
 npm install --save regexmatcher
 ```
 
-## Example
+## Example 1
+
+```javascript
+const regexmatcher = require('./regexmatcher'),
+    results = regexmatcher.getMatches(/https?/gi, 'http HTTP https HTTPS ptth PTTH sptth SPTTH');
+
+console.log(results);
+/* { matches:
+[ [ 'http',
+    index: 0,
+    input: 'http HTTP https HTTPS ptth PTTH sptth SPTTH' ],
+[ 'HTTP',
+    index: 5,
+    input: 'http HTTP https HTTPS ptth PTTH sptth SPTTH' ],
+[ 'https',
+    index: 10,
+    input: 'http HTTP https HTTPS ptth PTTH sptth SPTTH' ],
+[ 'HTTPS',
+    index: 16,
+    input: 'http HTTP https HTTPS ptth PTTH sptth SPTTH' ] ],
+summary: 'There are 4 matches' } */
+```
+
+## Example 2
 
 ```javascript
 const regexmatcher = require('regexmatcher'),
