@@ -5,4 +5,4 @@ const regexmatcher = require('./regexmatcher'),
 
 (results.matches.length === 1) ? console.log(results.matches[0][0]) : console.log('Please enter a valid North American telephone number...');
 
-console.log(results);
+console.dir(results);

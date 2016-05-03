@@ -17,7 +17,7 @@ npm install --save regexmatcher
 const regexmatcher = require('regexmatcher'),
     results = regexmatcher.getMatches(/https?/gi, 'http HTTP https HTTPS ptth PTTH sptth SPTTH');
 
-console.log(results);
+console.dir(results);
 /* { matches:
 [ [ 'http',
     index: 0,
@@ -42,7 +42,7 @@ const regexmatcher = require('regexmatcher'),
 
 (results.matches.length === 1) ? console.log(results.matches[0][0]) : console.log('Please enter a valid North American telephone number...'); /* 555-555-5555 */
 
-console.log(results); /* { matches: [ [ '555-555-5555', index: 0, input: '555-555-5555' ] ],
+console.dir(results); /* { matches: [ [ '555-555-5555', index: 0, input: '555-555-5555' ] ],
   summary: 'There is 1 match.' } */
 ```
 
