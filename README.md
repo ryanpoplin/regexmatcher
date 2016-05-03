@@ -48,7 +48,7 @@ console.dir(results); /* { matches: [ [ '555-555-5555', index: 0, input: '555-55
 
 ## Motivation
 
-### I wanted to quickly practice and test strings for regular expression matches without the overhead of UI tools on the web.
+### I wanted to quickly practice and test strings for regular expression pattern matches without the overhead of UI tools.
 
 ### Example Code
 
